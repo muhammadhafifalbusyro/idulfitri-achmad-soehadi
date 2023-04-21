@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Eid Al-Fitr 1444 H</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <audio autoplay type="audio" loop="" class="audio"></audio>
+  <div class="bg"></div>
+  <div class="card">
+    <div class="imgBox" onclick="tampil()">
+      <Sediv class="bark" onclick="tampil()"></Sediv>
+      <img src="front fix.png" onclick="tampil()">
+    </div>
+    <div class="details" onclick="tampil()">
+
+      <h4 class="color1">Happy Eid Al-Fitr</h2> <!-- Tulis judul di sini -->
+        <h4 class="color2 margin">1444 H.</h3> <!-- Tulis sub-judul di sini -->
+          <p>May Allah approve your kind deeds,</p> <!-- Tulis bait awal di sini -->
+          <p>forgive your disobedience and sins,</p>
+          <p>and ease the suffering</p>
+          <p>of all individuals around the globe.</p>
+          <p>Eid mubarak</p>
+          <p>تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ</p>
+          <!-- Tulis bait akhir di sini -->
+          <p class="text-right">From</p> <!-- Tulis tertanda di sini -->
+          <p class="text-right">Achmad Soehadi's family</p>
+          <a class="text-right"
+            href="https://api.whatsapp.com/send?phone=628997750634&text=تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ🙂">
+            <p>Reply to WA</p>
+          </a>
+    </div> <!-- Tulis nama kamu di sini -->
+  </div>
+  <script>
+    var musik = "sound.mp3";
+  </script>
+  <script>
+    var count = 0
+    setTimeout(() => {
+      var audio = document.querySelector(".audio"); audio.src = musik;
+      audio.play();
+    }, 100);
+    function tampil() {
+      if (count == 0) {
+        var audio = document.querySelector(".audio"); audio.src = musik;
+        audio.play();
+        count += 1
+      }
+    }
+  </script>
+</body>
+
+</html>
